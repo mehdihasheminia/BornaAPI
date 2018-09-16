@@ -1,4 +1,4 @@
-package com.bornaapp;
+package com.bornaapp.calendar;
 
 import org.apache.commons.net.ntp.NTPUDPClient;
 import org.apache.commons.net.ntp.TimeInfo;

@@ -1,6 +1,6 @@
 android {
-    buildToolsVersion "28.0.1"
-    compileSdkVersion 28
+    buildToolsVersion "28.0.1"  //The version of android build tools api that libgdx needs
+    compileSdkVersion 28        //The version of android api that we are using to compile our project
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -18,8 +18,8 @@ android {
     }
     defaultConfig {
         applicationId "com.bornaapp.bornaapi"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion 15     //The version of lowest android os that our app supports
+        targetSdkVersion 28  //The version of android os we test our app on( ex. my mobile phone)
         versionCode 1
         versionName "1.0"
     }
@@ -92,8 +92,8 @@ eclipse {
     }
 
     jdt {
-        sourceCompatibility = 1.6
-        targetCompatibility = 1.6
+        sourceCompatibility = 1.7
+        targetCompatibility = 1.7
     }
 
     classpath {
