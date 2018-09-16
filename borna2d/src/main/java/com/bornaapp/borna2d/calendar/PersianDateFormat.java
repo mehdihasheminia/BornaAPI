@@ -1,6 +1,4 @@
-package com.bornaapp.calendar;
-
-import com.bornaapp.calendar.PersianDate;
+package com.bornaapp.borna2d.calendar;
 
 import java.text.ParseException;
 
@@ -52,7 +50,7 @@ public class PersianDateFormat
 		pattern = "l j F Y H:i:s";
 	}
 
-	public String format(com.bornaapp.calendar.PersianDate date) {
+	public String format(com.bornaapp.borna2d.calendar.PersianDate date) {
 		String year2 = null;
 		if((""+date.getShYear()).length() == 2){
 			year2 = ""+date.getShYear();
@@ -76,7 +74,7 @@ public class PersianDateFormat
 	 * @return
 	 * @throws ParseException
 	 */
-	public com.bornaapp.calendar.PersianDate parse(String date) throws ParseException{
+	public com.bornaapp.borna2d.calendar.PersianDate parse(String date) throws ParseException{
 		return this.parse(date,this.pattern);
 	}
 	/**
@@ -87,7 +85,7 @@ public class PersianDateFormat
 	 * @return
 	 * @throws ParseException
 	 */
-	public com.bornaapp.calendar.PersianDate parse(String date , String pattern) throws ParseException {
+	public com.bornaapp.borna2d.calendar.PersianDate parse(String date , String pattern) throws ParseException {
 		ArrayList<Integer> JalaliDate = new ArrayList<Integer>(){{
 			add(0);
 			add(0);
@@ -109,7 +107,7 @@ public class PersianDateFormat
 
 			}
 		}
-		return new com.bornaapp.calendar.PersianDate().initJalaliDate(JalaliDate.get(0),JalaliDate.get(1),JalaliDate.get(2),JalaliDate.get(3),JalaliDate.get(4),JalaliDate.get(5));
+		return new com.bornaapp.borna2d.calendar.PersianDate().initJalaliDate(JalaliDate.get(0),JalaliDate.get(1),JalaliDate.get(2),JalaliDate.get(3),JalaliDate.get(4),JalaliDate.get(5));
 	}
 
 	/**
@@ -119,7 +117,7 @@ public class PersianDateFormat
 	 * @return PersianDate object
 	 * @throws ParseException
 	 */
-	public com.bornaapp.calendar.PersianDate parseGrg(String date) throws ParseException{
+	public com.bornaapp.borna2d.calendar.PersianDate parseGrg(String date) throws ParseException{
 		return this.parseGrg(date,this.pattern);
 	}
 
@@ -131,7 +129,7 @@ public class PersianDateFormat
 	 * @return PersianDate object
 	 * @throws ParseException
 	 */
-	public com.bornaapp.calendar.PersianDate parseGrg(String date, String pattern) throws ParseException {
+	public com.bornaapp.borna2d.calendar.PersianDate parseGrg(String date, String pattern) throws ParseException {
 		Date dateInGrg = new SimpleDateFormat(pattern).parse(date);
 		return new PersianDate(dateInGrg.getTime());
 	}

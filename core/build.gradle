@@ -7,5 +7,4 @@ eclipse.project {
 }
 dependencies {
     implementation project(':borna2d')
-    implementation project(':calendar')
 }

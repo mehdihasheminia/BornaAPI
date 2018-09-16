@@ -1,4 +1,4 @@
-package com.bornaapp.calendar;
+package com.bornaapp.borna2d.calendar;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
