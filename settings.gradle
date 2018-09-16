@@ -1,0 +1,2 @@
+include ':borna2d', ':calendar'
+include 'desktop', 'android', 'core'
