@@ -57,7 +57,7 @@ public abstract class LevelBase implements GestureListener {
 
     //-------------------------------------- Level state -------------------------------------------
 
-    protected java.util.Map<String, String> data = new HashMap<>();
+    protected java.util.Map<String, String> data = new HashMap<String, String>();
 
     public Flags<FLAG> flags = new Flags<FLAG>(FLAG.class);
 
