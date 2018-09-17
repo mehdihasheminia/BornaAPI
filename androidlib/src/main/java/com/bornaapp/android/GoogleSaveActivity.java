@@ -28,7 +28,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.bornaapp.bornaapi.R;
+import com.bornaapp.androidlib.R;
 import com.google.android.gms.common.images.ImageManager;
 import com.google.android.gms.games.snapshot.Snapshot;
 import com.google.android.gms.games.snapshot.SnapshotMetadata;

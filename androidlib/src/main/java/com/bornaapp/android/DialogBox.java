@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bornaapp.bornaapi.R;
+import com.bornaapp.androidlib.R;
 import com.google.android.gms.common.images.ImageManager;
 
 /**
@@ -66,21 +66,20 @@ public class DialogBox extends Dialog implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btn_dialog_ok:
-                if (mListener != null)
-                    mListener.onOKPressed();
-                break;
-            case R.id.btn_dialog_yes:
-                if (mListener != null)
-                    mListener.onYesPressed();
-                break;
-            case R.id.btn_dialog_no:
-                if (mListener != null)
-                    mListener.onNoPressed();
-                break;
-            default:
-                break;
+        int i = v.getId();
+        if (i == R.id.btn_dialog_ok) {
+            if (mListener != null)
+                mListener.onOKPressed();
+
+        } else if (i == R.id.btn_dialog_yes) {
+            if (mListener != null)
+                mListener.onYesPressed();
+
+        } else if (i == R.id.btn_dialog_no) {
+            if (mListener != null)
+                mListener.onNoPressed();
+
+        } else {
         }
         dismiss();
     }

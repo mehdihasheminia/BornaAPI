@@ -1,2 +1,2 @@
-include ':borna2d'
+include ':borna2d', ':androidlib'
 include 'desktop', 'android', 'core'

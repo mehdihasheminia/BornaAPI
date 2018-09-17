@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.bornaapp.bornaapi.R;
+import com.bornaapp.androidlib.R;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
