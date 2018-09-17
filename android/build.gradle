@@ -1,6 +1,6 @@
 android {
-    buildToolsVersion "28.0.1"  //The version of android build tools api that libgdx needs
-    compileSdkVersion 28        //The version of android api that we are using to compile our project
+    buildToolsVersion "27.0.3"  //The version of android build tools api that libgdx needs
+    compileSdkVersion 27        //The version of android api that we are using to compile our project
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -19,7 +19,8 @@ android {
     defaultConfig {
         applicationId "com.bornaapp.bornaapi"
         minSdkVersion 15     //The version of lowest android os that our app supports
-        targetSdkVersion 28  //The version of android os we test our app on( ex. my mobile phone)
+        targetSdkVersion 27  //The version of android os we test our app on( ex. my mobile phone)
+        multiDexEnabled true //todo: needed only for API < 21
         versionCode 1
         versionName "1.0"
     }
@@ -133,4 +134,13 @@ idea {
             }
         }
     }
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.android.gms:play-services-auth:16.0.0'
+    implementation 'com.google.android.gms:play-services-games:15.0.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }

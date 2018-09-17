@@ -1,9 +1,10 @@
 apply plugin: 'java-library'
 
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'commons-net:commons-net:3.6'
-}
-
 sourceCompatibility = "1.7" //The lowest version of JDK our app supports
 targetCompatibility = "1.7"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'commons-net:commons-net:3.6'
+}
