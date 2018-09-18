@@ -88,7 +88,7 @@ project(":android") {
 }
 
 project(":borna2d") {
-    apply plugin: "java"
+    apply plugin: 'java-library'
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
